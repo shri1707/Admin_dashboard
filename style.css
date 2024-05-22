@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    filter: invert(1);
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -6,8 +15,48 @@
 
 
 .sidebar{
-    background-color: aqua;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 10px 20px 20px;
+    display: grid;
+    /* grid-template-rows: 55px 256px 125px; */
+    grid-template-rows: 1fr 3fr 1.5fr 5fr;
+    gap: 45px;
+}
 
+.dash{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    gap:19px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.admin, .support{
+    display: grid;
+    gap: 10px;
+    padding-left: 11px;
+}
+.home, .side_bottom{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 100px;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.home div, .home img, .side_bottom img, .side_bottom div{
+    cursor: pointer;
+}
+.dash img{
+    width: 50px;
+}
+
+.admin img, .side_bottom img{
+    width: 25px;
 }
 .main{
     background-color: rgb(255, 0, 0);
