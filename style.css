@@ -25,7 +25,7 @@ img{
     padding: 10px 20px 20px;
     display: grid;
     /* grid-template-rows: 55px 256px 125px; */
-    grid-template-rows: 1fr 3fr 1.5fr 5fr;
+    grid-template-rows: 1fr 3fr 1.5fr 3.5fr;
     gap: 45px;
 }
 
@@ -63,7 +63,7 @@ img{
 .name img{
     width: 50px;
 }
-.admin img, .side_bottom img, .headerTop img{
+.admin img, .side_bottom img, .headerTop img, .mainContent img{
     width: 25px;
 }
 
@@ -151,4 +151,61 @@ img{
 
 #hi{
     font-size: 15px;
+}
+
+.main{
+    margin: 35px 20px 35px;
+    display: grid;
+    grid-template-columns: 790px 285px;
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 375px 375px;
+    gap: 20px;
+}
+
+#proj, .sideTop h3, .sideBottom h3{
+    margin-bottom: 10px;
+}
+
+.card{
+    box-sizing: border-box;
+    background-color: white;
+    width: 375px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 2px rgb(195, 195, 195);
+    padding: 35px 30px;
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+    background-color: #eab308;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.options{
+    margin-top: 30px;
+    text-align: end;
+}
+
+.options img{
+    margin-left: 20px;
+}
+
+.info, .trend{
+    background-color: white;
+    box-shadow: 2px 4px 2px rgb(195, 195, 195);
+    border-radius: 15px;
+    width: 285px;
+    height: 300px;
+    margin-bottom: 35px;
 }
