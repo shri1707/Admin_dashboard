@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(225, 225, 225);
+}
 
 img{
     filter: invert(1);
+}
+
+.rightSide img{
+    filter: invert(0);
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-
-
 
 .sidebar{
     background-color: #0ea5e9;
@@ -55,14 +60,95 @@ img{
     width: 50px;
 }
 
-.admin img, .side_bottom img{
+.name img{
+    width: 50px;
+}
+.admin img, .side_bottom img, .headerTop img{
     width: 25px;
 }
+
+#acc{
+    width: 35px;
+}
+
 .main{
-    background-color: rgb(255, 0, 0);
     grid-column: 2/3;
 }
 .header{
-    background-color: rgb(47, 255, 0);
+    background-color: rgb(255, 255, 255);
     grid-column: 2/3;
+    padding: 15px 30px 10px 30px;
+    box-shadow: 0 5px 2px rgb(195, 195, 195);
+}
+
+.headerTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+}
+
+.headerBottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px ;
+    font-weight: bold;
+    gap: 40px;
+    
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 30px 75vh;
+    align-items: center;
+    gap:20px;
+}
+
+.search div{
+    background-color:rgb(225, 225, 225);
+    border-radius: 30px;
+    width: 75vh;
+    height: 30px;
+}
+
+.icon{
+    display: grid;
+    grid-template-columns: 30px 30px 130px;
+    gap: 25px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 50px 70vh;
+    align-items: center;
+    gap: 15px;
+}
+
+.upload{
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+    align-items: center;
+    gap: 30px;
+}
+
+.upload div{
+    background-color:  #0ea5e9;
+    text-align: center;
+    border-radius: 30px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#bigName{
+    font-size: 25px;
+}
+
+#hi{
+    font-size: 15px;
 }
