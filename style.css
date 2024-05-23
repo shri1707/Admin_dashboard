@@ -209,6 +209,7 @@ img {
 
 .Lorem{
     color: #555;
+    height: 80px;
 }
 
 .options {
@@ -268,7 +269,7 @@ img {
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: start;
-    gap: 10px;
+    gap: 15px;
 }
 
 .IDs img {
